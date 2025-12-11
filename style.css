@@ -14,8 +14,12 @@ padding: 50px;
 .countlabel{
     font-size: 24px;
     margin-bottom: 20px;
-    color: rgb(7, 122, 62);
 }
+
+/* color is controlled by classes on the label (#counterLabel) */
+#counterLabel.zero { color: #000; }
+#counterLabel.positive { color: #0a8a0a; }
+#counterLabel.negative { color: #d93025; }
 .btn{
     display: flex;
     gap: 20px;
@@ -36,4 +40,9 @@ button{
     cursor: pointer;
     color: rgb(0, 0, 0);
     transition: background-color 0.3s ease;
+     transition: 0.3s ease;
+}
+button:hover {
+  background-color: #333;
+  color: white;
 }
